@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analytics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>FeedbackAnalytics</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="records.html">Records</a>
+        <a href="analytics.html">Analytics</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <h1 style="text-align:center;">Collected Analytics Data</h1>
+    <p style="text-align:center; margin-bottom:30px;">
+        This page shows user interaction logs collected from the website.
+        This table is scrape-friendly.
+    </p>
+
+    <!-- WRAPPER -->
+    <div class="analytics-layout">
+
+        <!-- TABLE -->
+        <div class="analytics-table">
+            <table id="analyticsTable">
+                <tr>
+                    <th>#</th>
+                    <th>Page</th>
+                    <th>Action</th>
+                    <th>Element</th>
+                    <th>Time Spent (sec)</th>
+                    <th>Timestamp</th>
+                </tr>
+            </table>
+        </div>
+
+        <!-- SIDE BUTTONS -->
+        <div class="analytics-actions">
+            <button onclick="exportCSV()">Export CSV</button>
+            <button onclick="exportJSON()">Export JSON</button>
+            <button onclick="clearAnalytics()">Clear Analytics Data</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="analytics.js"></script>
+</body>
+</html>
